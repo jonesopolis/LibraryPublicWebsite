@@ -1,0 +1,29 @@
+$piper-2: #d7dcda;
+$piper-1:#bec8c3;
+$piper-3: #a2afa9;
+$piper-4: #76807b;
+
+$light: $piper-2;
+$dark: $piper-4;
+
+@import './bootstrap/bootstrap.scss';
+
+nav a:hover {
+  color: $piper-3  !important;
+}
+
+html,
+body {
+  padding-top: 2.26rem;
+  margin: 0;
+  font-family: MetropolisMedium;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}

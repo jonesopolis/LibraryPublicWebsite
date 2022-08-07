@@ -12,21 +12,21 @@ export default function Home() {
         </div>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <Image src={mountains} className="d-block w-100" layout="responsive" />
+            <Image src={mountains} className="d-block w-100" layout="responsive" alt="piper webs" />
             <div className="carousel-caption d-none d-md-block">
               <h5>First slide label</h5>
               <p>Some representative placeholder content for the first slide.</p>
             </div>
           </div>
           <div className="carousel-item">
-            <Image src={mountains} className="d-block w-100" layout="responsive" />
+            <Image src={mountains} className="d-block w-100" layout="responsive" alt="piper webs" />
             <div className="carousel-caption d-none d-md-block">
               <h5>Second slide label</h5>
               <p>Some representative placeholder content for the second slide.</p>
             </div>
           </div>
           <div className="carousel-item">
-            <Image src={mountains} className="d-block w-100" layout="responsive" />
+            <Image src={mountains} className="d-block w-100" layout="responsive" alt="piper webs" />
             <div className="carousel-caption d-none d-md-block">
               <h5>Third slide label</h5>
               <p>Some representative placeholder content for the third slide.</p>
@@ -75,7 +75,7 @@ export default function Home() {
           </svg>
 
           <h2>Heading</h2>
-          <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
+          <p>Another exciting bit of representative placeholder content. This time, we&apos;ve moved on to the second column.</p>
           <p>
             <a className="btn btn-secondary" href="#">
               View details &raquo;

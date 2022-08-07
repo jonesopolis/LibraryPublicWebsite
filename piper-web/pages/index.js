@@ -1,4 +1,4 @@
-import Image from "next/Image";
+import Image from "next/image";
 import mountains from "../img/mountains.jpg";
 
 export default function Home() {

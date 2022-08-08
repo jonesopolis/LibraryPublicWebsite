@@ -13,7 +13,7 @@ export default function Home() {
         <div className="carousel-inner">
           <div className="carousel-item active">
             <Image src={mountains} className="d-block w-100" layout="responsive" alt="piper webs" />
-            <div className="carousel-caption d-none d-md-block">
+            <div className="carousel-caption d-none d-md-block text-dark">
               <h5>First slide label</h5>
               <p>Some representative placeholder content for the first slide.</p>
             </div>
@@ -46,10 +46,11 @@ export default function Home() {
   }
 
   function getCards() {
-    return (
-      <div className="row">
+    let items = [];
+    for (var i = 0; i < 3; i++) {
+      items.push(
         <div className="col-lg-4 text-center">
-          <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+          <svg className="bd-placeholder-img rounded-circle mb-4" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
             <title>Placeholder</title>
             <rect width="100%" height="100%" fill="#777" />
             <text x="50%" y="50%" fill="#777" dy=".3em">
@@ -65,45 +66,18 @@ export default function Home() {
             </a>
           </p>
         </div>
-        <div className="col-lg-4 text-center">
-          <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" />
-            <text x="50%" y="50%" fill="#777" dy=".3em">
-              140x140
-            </text>
-          </svg>
+      );
+    }
 
-          <h2>Heading</h2>
-          <p>Another exciting bit of representative placeholder content. This time, we&apos;ve moved on to the second column.</p>
-          <p>
-            <a className="btn btn-secondary" href="#">
-              View details &raquo;
-            </a>
-          </p>
-        </div>
-        <div className="col-lg-4 text-center">
-          <svg className="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
-            <title>Placeholder</title>
-            <rect width="100%" height="100%" fill="#777" />
-            <text x="50%" y="50%" fill="#777" dy=".3em">
-              140x140
-            </text>
-          </svg>
-
-          <h2>Heading</h2>
-          <p>And lastly this, the third column of representative placeholder content.</p>
-          <p>
-            <a className="btn btn-secondary" href="#">
-              View details &raquo;
-            </a>
-          </p>
-        </div>
-      </div>
-    );
+    return <div className="row">{items}</div>;
   }
 
   function getFeatures() {
+    let items = [];
+    for (var i = 0; i < 3; i++) {
+      items.push();
+    }
+
     return (
       <>
         <hr className="featurette-divider" />

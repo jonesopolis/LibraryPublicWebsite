@@ -27,3 +27,7 @@ a {
 * {
   box-sizing: border-box;
 }
+
+.bg-dark rect {
+  fill: $dark;
+}

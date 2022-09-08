@@ -116,7 +116,7 @@ export default function Home() {
           </div>
         </div>
 
-        <hr className="featurette-divider" />
+        <hr className="featurette-divider my-5" />
 
         <div className="row featurette">
           <div className="col-md-12">
@@ -128,7 +128,7 @@ export default function Home() {
           </div>
         </div>
 
-        <hr className="featurette-divider" />
+        <hr className="featurette-divider my-5" />
 
         <div className="row featurette">
           <div className="col-md-12">

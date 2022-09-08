@@ -74,7 +74,7 @@ export default function Home() {
     return (
       <div className="row">
         {models.map((x) => (
-          <div className="col-lg-4 text-center" key={x.id}>
+          <div className="col-lg-4 text-center px-4" key={x.id}>
             <svg className="bd-placeholder-img rounded-circle mb-4 bg-dark" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
               <title>Placeholder</title>
               <rect width="100%" height="100%" />
@@ -83,7 +83,7 @@ export default function Home() {
               </text>
             </svg>
 
-            <h2>{x.heading}</h2>
+            <h3>{x.heading}</h3>
             <p>{x.description}</p>
             <p>
               <Link href={x.linkRoute}>

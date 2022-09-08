@@ -1,6 +1,6 @@
 import Image from "next/image";
 import mountains from "../img/mountains.jpg";
-import Link from "next/link";
+import map from "../img/map.png";
 
 export default function Home() {
   function getCarousel() {
@@ -53,21 +53,18 @@ export default function Home() {
         heading: "You manage web content.",
         description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in facilisis libero, eget congue lorem. Nulla non ligula eget erat aliquam lacinia a eget felis. Nulla turpis sapien, ultricies sit amet suscipit quis, auctor id risus. Donec pellentesque tellus metus, in eleifend lacus euismod eget. Vestibulum vehicula ut metus id vestibulum. `,
         linkText: `This is a link`,
-        linkRoute: "/services",
       },
       {
         id: 2,
         heading: "One-stop solutions",
-        description: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in facilisis libero, eget congue lorem. Nulla non ligula eget erat aliquam lacinia a eget felis. Nulla turpis sapien, ultricies sit amet suscipit quis, auctor id risus. Donec pellentesque tellus metus, in eleifend lacus euismod eget. Vestibulum vehicula ut metus id vestibulum. `,
+        description: `Our services include everything required to create and maintain your site! Including customized site design, web hosting, content management, and a friendly support staff.`,
         linkText: "This is the link",
-        linkRoute: "/services",
       },
       {
         id: 3,
-        heading: "Services",
-        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi in facilisis libero, eget congue lorem. Nulla non ligula eget erat aliquam lacinia a eget felis. Nulla turpis sapien, ultricies sit amet suscipit quis, auctor id risus. Donec pellentesque tellus metus, in eleifend lacus euismod eget. Vestibulum vehicula ut metus id vestibulum.",
+        heading: "Community Connections",
+        description: "PiperWebs serves a growing number of libraries -- currently over 150 libraries in 26 states. All are working with the same system, providing content ideas, website suggestions, and more. You're not only getting a website - you're joining a growing community.",
         linkText: "This is the link",
-        linkRoute: "/services",
       },
     ];
 
@@ -75,21 +72,17 @@ export default function Home() {
       <div className="row">
         {models.map((x) => (
           <div className="col-lg-4 text-center px-4" key={x.id}>
-            <svg className="bd-placeholder-img rounded-circle mb-4 bg-dark" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <div style={{ borderRadius: "5px", overflow: "hidden" }} className="position-relative">
+              <Image src={map} layout="fill" objectFit="cover" />
+            </div>
+
+            <svg className="bd-placeholder-img rounded-circle mb-4 bg-dark" width="140" height="140">
               <title>Placeholder</title>
               <rect width="100%" height="100%" />
-              <text x="50%" y="50%" dy=".3em">
-                things
-              </text>
             </svg>
 
             <h3>{x.heading}</h3>
             <p>{x.description}</p>
-            <p>
-              <Link href={x.linkRoute}>
-                <a className="btn btn-secondary">{x.linkText}&raquo;</a>
-              </Link>
-            </p>
           </div>
         ))}
       </div>

@@ -12,12 +12,12 @@ function Layout({ children }) {
       </Head>
 
       <Navbar></Navbar>
-      <div className="mb-4 bg-light rounded-3">{children}</div>
+      <div className="bg-light rounded-3">{children}</div>
 
       <Script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></Script>
 
       <div className="container">
-        <footer className="py-3 my-4">
+        <footer className="py-3">
           <ul className="nav justify-content-center border-bottom pb-3 mb-3">
             <li className="nav-item">
               <Link href="/">

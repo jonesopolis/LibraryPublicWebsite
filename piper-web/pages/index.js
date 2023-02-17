@@ -15,7 +15,7 @@ export default function Home() {
           <div className="carousel-item active">
             <Image src={mountains} className="d-block w-100" layout="responsive" alt="piper webs" />
             <div className="carousel-caption d-none d-md-block text-dark">
-              <h5>First slide label</h5>
+              <h5>David Rules</h5>
               <p>Some representative placeholder content for the first slide.</p>
             </div>
           </div>

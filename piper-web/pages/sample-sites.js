@@ -16,16 +16,16 @@ function SampleSites() {
               </h2><br/>
 
            
-              <p><a href="https://www.durhampubliclibrary.org" target="_blank">Durham Public Library</a></p>
+              <p><a href="https://www.durhampubliclibrary.org" target="_blank" rel="noreferrer">Durham Public Library</a></p>
 
-              <p><a href="https://www.bowbakerfreelibrary.org" target="_blank">Baker Free Library</a></p>
-              <p><a href="https://www.meekins-library.org" target="_blank">Meekins Library</a></p>
+              <p><a href="https://www.bowbakerfreelibrary.org" target="_blank" rel="noreferrer">Baker Free Library</a></p>
+              <p><a href="https://www.meekins-library.org" target="_blank" rel="noreferrer">Meekins Library</a></p>
 
-              <p><a href="https://www.centervillelibrary.org" target="_blank">Centerville Library</a> </p>
+              <p><a href="https://www.centervillelibrary.org" target="_blank" rel="noreferrer">Centerville Library</a> </p>
 
-              <p><a href="https://counselingassociatesofky.com" target="_blank">Counseling Associates of Ky</a> </p>
+              <p><a href="https://counselingassociatesofky.com" target="_blank" rel="noreferrer">Counseling Associates of Ky</a> </p>
 
-              <p><a href="https://eurekalibrary.azurewebsites.net" target="_blank">Eureka Public Library</a></p>
+              <p><a href="https://eurekalibrary.azurewebsites.net" target="_blank" rel="noreferrer">Eureka Public Library</a></p>
             </div>
             <div className="col-md-5">
               <svg className="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false">
